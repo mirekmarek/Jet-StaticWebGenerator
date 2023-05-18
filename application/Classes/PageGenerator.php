@@ -30,7 +30,7 @@ class PageGenerator {
 	{
 		$page_URL = $page->getURL();
 		
-		$URLs = [ $page->getURL() ];
+		$URLs = [ $page_URL ];
 		
 		foreach($page->getContent() as $content) {
 			
@@ -42,7 +42,6 @@ class PageGenerator {
 					$URLs[] = $page_URL.$path;
 				}
 			}
-			
 		}
 		
 		foreach($URLs as $URL) {
